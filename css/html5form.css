@@ -1,0 +1,21 @@
+.html5info { 
+	padding: 5px; font-size: 10px; 
+	opacity: 0.8; 
+	filter: alpha(opacity=80); 
+	background-repeat: no-repeat;  
+	background-image: url(images/bubblearrow.gif);
+}
+.html5info-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+.html5info-inner { 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px; 
+	border-radius:3px; 
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.html5info-north { background-position: top center; }
+.html5info-south { background-position: bottom center; }
+.html5info-east { background-position: right center; }
+.html5info-west { background-position: left center; }
+.placeholder{ color: #ccc; }

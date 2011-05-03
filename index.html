@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Html5form demo</title>
+		<link rel="stylesheet" href="css/style.css" /> 
+		<link rel="stylesheet" href="css/html5form.css" /> 
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/html5form.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+                $("form").html5form();
+			});	
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			
+			<h1>Html5form <span>- a product by <a href="http://d-xp.com">d-xp.com</a></span></h1>
+			
+			<p>
+				Enable placeholder, required, input[type=url,email,number] for dummy browsers
+			</p>
+			
+				<form action="index.html" method="post">
+					<p>
+						<input type="email" placeholder="Please enter your email" name="email" required />
+					</p>
+					
+					<p>
+						<input type="number" placeholder="Please enter a number" name="number" required />
+					</p>
+					
+					<p>
+						<input type="url" placeholder="Please enter your url" name="url" required />
+					</p>
+			
+					<button>Test</button>
+				</form>
+			
+			
+			<h2>Usage</h2>
+			<p class="test">
+<pre>
+$("form").html5form(<span style="color:#999;">{
+	//settings
+	tipgravity : 'w',
+	tipfade: true,
+	messages: {
+		required: "This field is required",
+		number: "Please enter a correct number",
+		email: "Please enter a correct email",
+		url: "Please enter a correct url",
+		custom: "This field is not correct"
+	}
+}</span>);
+</pre>
+				
+			</p>
+			
+			<h2>Code</h2>
+			<p><a href="https://github.com/aheinze/Html5form">Fork me on github</a></p>
+		</div>
+	</body>
+</html>
